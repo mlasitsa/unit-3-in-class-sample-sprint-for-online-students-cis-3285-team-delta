@@ -59,6 +59,7 @@ namespace Sermo.UI.Controllers
 
         public void AddMessage(MessageViewModel messageViewModel)
         {
+            // Changes for Spring # 1 -- User Story 4 -- Sam Poverud
             var messageRecord = mapper.MapMessageViewModelToMessageRecord(messageViewModel);
             messageRepository.AddMessageToRoom(messageRecord.RoomID, messageRecord.AuthorName, messageRecord.Text);
         }
