@@ -33,6 +33,8 @@ namespace Sermo.Data.Mongo
 
         public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
         {
+            //Spring 2 User Story 3, Sin Kei Cheung
+
             var messageQuery = Query<MessageViewModel>.EQ(viewModel => viewModel.RoomID, roomID);
             var messagesCollection = GetMessagesCollection();
             return messagesCollection.Find(messageQuery);
@@ -46,6 +48,8 @@ namespace Sermo.Data.Mongo
 
         private MongoCollection<MessageViewModel> GetMessagesCollection()
         {
+            //Spring 2 User Story 3, Sin Kei Cheung
+
             var database = GetDatabase();
             var messagesCollection = database.GetCollection<MessageViewModel>(MessagesCollection);
             return messagesCollection;
