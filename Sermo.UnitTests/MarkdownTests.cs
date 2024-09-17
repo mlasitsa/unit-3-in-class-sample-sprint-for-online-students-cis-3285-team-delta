@@ -11,6 +11,11 @@ using NUnit.Framework;
 
 using Moq;
 
+// Changes for Sprint 1 -- I want to view a list of rooms that represent conversations. -- Max Lasitsa
+// Pseudo-code: Initialize message record with room ID, author name, and text
+
+// Changes for Sprint 2 -- As a system admin, I want to be able to set a limit to the number of users in any one room. -- Max Lasitsa
+// Pseudo-code: Adjust user limit when editing room settings
 namespace Sermo.UnitTests
 {
     using Markdown = MarkdownDeep.Markdown;

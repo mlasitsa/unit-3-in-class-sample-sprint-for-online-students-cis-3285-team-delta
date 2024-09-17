@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 using Sermo.UI.Contracts;
 
+// Changes for Sprint 2 -- As a system administrator, I want to serve hundreds of users concurrently. -- Max Lasitsa
+// Pseudo-code: Handle concurrent requests when creating messages
+
 namespace Sermo.Markdown
 {
     using Markdown=MarkdownDeep.Markdown;

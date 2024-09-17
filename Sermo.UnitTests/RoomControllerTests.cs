@@ -15,6 +15,9 @@ using Moq;
 using System.ComponentModel.DataAnnotations;
 
 namespace Sermo.UnitTests
+
+// Changes for Sprint 1 -- I want to create rooms for categorizing conversations -- Max Lasitsa
+// Pseudo-code: Test creating a room
 {
     [TestFixture]
     public class RoomControllerTests
@@ -92,6 +95,9 @@ namespace Sermo.UnitTests
             Assert.That(isValid, Is.False);
         }
 
+
+        // Changes for Sprint 1 -- I want to view a list of rooms that represent conversations. -- Max Lasitsa
+        // Pseudo-code: Test creating a message in a room
         [Test]
         [TestCase(null)]
         [TestCase("")]

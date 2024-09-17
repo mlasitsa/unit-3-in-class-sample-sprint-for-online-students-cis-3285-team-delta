@@ -5,6 +5,10 @@ using System.Web;
 
 using Sermo.UI.Contracts;
 
+
+// Changes for Sprint 1 --  I want to view a list of rooms that represent conversations -- Max Lasitsa
+// Pseudo-code: Display a list of rooms and their details
+
 namespace Sermo.UI.ViewModels
 {
     public class MessageListViewModel
